@@ -97,7 +97,7 @@ LSTM是把语言学规则（包括情感词典、否定词和程度副词）以�
 ![Figure 1](https://leanote.com/api/file/getImage?fileId=5b1111e6ab644116b7001aa1)
 
 > 本文的核心思想是通过规则化句子的相邻位置的输出来对句子层次的情感分类中的情感词，否定词和程度副词的语言角色进行建模。 
-如图所示，在"It’s not an interesting movie"中，"$^*$an interesting movie"和"$^*$interesting movie"中的预测情感分布应该彼此接近，而预测的情感分布在"$^*$interesting movie"应该与前面的位置（在后面的方向） ("$^*$movie") 完全不同，因为可以看到一个情感词("interesting") 。
+如图所示，在"It’s not an interesting movie"中，"an interesting movie"和"interesting movie"中的预测情感分布应该彼此接近，而预测的情感分布在"interesting movie"应该与前面的位置（在后面的方向） ("movie") 完全不同，因为可以看到一个情感词("interesting") 。
 <br>
 作者定义了四种规则(一个通用规则和三个特殊规则)来将语言学知识结合进来，每一个规则主要是考虑当前词和它相邻位置词的情感分布来定义的。
 
@@ -110,7 +110,7 @@ LSTM是把语言学规则（包括情感词典、否定词和程度副词）以�
 > NSR的基本想法是:
 如果相邻的两个词都是non-opinion（不表达意见）的词，那么这两个词的情感分布应该是比较相近的。
 将这种想法结合到模型中，有如下定义：
-<br>
+
 $$ L_{t} ^{NSR} =max(0,D_{KL}(p_{t} ,p_{t-1} )-M ) $$
 其中$M$是边界参数，$D_{KL} (p,q)$是对称$KL$散度，$p_{t}$ 是要预测的位置$t$处的词的分布，它的向量表示是$h_{t}$ 。
 
@@ -170,7 +170,9 @@ $$L_{t}^{(SR)}=max(0,D_{KL}(p_{t},p_{t-1}^{(SR)})-M )$$
 如果当前词是否定词的话，那么它的前一个词或者后一个词经过转化矩阵之后的分布与当前词的分布应该是比较近的。
 $$p_{t-1}^{(NR)}=softmax(T_{x_{j} }\times p_{t-1}  )$$ 
 $$p_{t+1}^{(NR)} =softmax(T_{x_{j} }\times p_{t+1}  )$$
-![1](https://leanote.com/api/file/getImage?fileId=5b0d4528ab644177f100227e)
+
+![figure 2](https://leanote.com/api/file/getImage?fileId=5b0d4528ab644177f100227e)
+
 <br>
 我们可以看到，如果在当前词是否定词的情况下，如果它的前一个词或者后一个词与当前词的分布较近，那么$NR$的值比较小。
 
