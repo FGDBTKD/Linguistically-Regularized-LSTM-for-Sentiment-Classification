@@ -57,23 +57,26 @@
 <br>
 [4. [Kiritchenko and Mohammad 2016] Sentiment Composition of Words with Opposing Polarities](https://www.aclweb.org/anthology/N/N16/N16-1128.pdf)
 <br>
-> 文章1：对否定词的处理是将含有否定词的文本的情感倾向反转；
-文章2：由于不同的否定表达以不同的方式不同程度影响着句子的情感倾向，文中提出否定词按照某个常量值的程度改变着文本的情感倾向；         
-文章3： 将否定词作为特征结合到神经网络模型中；
-文章4：  将否定词和其他语言学知识与SVM结合在一起，分析文本情感倾向。
+> 文章1：对否定词的处理是将含有否定词的文本的情感倾向反转；<br>
+文章2：由于不同的否定表达以不同的方式不同程度影响着句子的情感倾向，文中提出否定词按照某个常量值的程度改变着文本的情感倾向；<br>
+文章3：将否定词作为特征结合到神经网络模型中；<br>
+文章4：将否定词和其他语言学知识与SVM结合在一起，分析文本情感倾向。
 
  - 程度副词 （intensity words）            
 
 > 程度副词影响文本的情感强度，在细粒度情感中非常关键，相关研究可参考：
-<br>
+
 [1. [Taboada et al. 2011] Lexicon-Based Methods for Sentiment Analysis](https://www.aclweb.org/anthology/J/J11/J11-2001.pdf)
+<br>
 [2. [Wei, Wu, and Lin 2011] A regression approach to affective rating of chinese words from anew](http://www.infomus.org/Events/proceedings/ACII2011/papers/6975/69750121.pdf)
+<br>
 [3. [Malandrakis et al. 2013] Distributional semantic models for affective text analysis](http://www.telecom.tuc.gr/~potam/preprints/journal/2013_TASLP_affect_text.pdf)
+<br>
 [4. [Wang, Zhang, and Lan 2016] Ecnu at semeval-2016 task 7: An enhanced supervised learning method for lexicon sentiment intensity ranking](http://www.aclweb.org/anthology/S16-1080)
 <br>
-文章1：直接让程度副词通过一个固定值来改变情感强度；
-文章2：利用线性回归模型来预测词语的情感强度值；
-文章3：通过核函数结合语义信息预测情感强度得分；
+文章1：直接让程度副词通过一个固定值来改变情感强度；<br>
+文章2：利用线性回归模型来预测词语的情感强度值；<br>
+文章3：通过核函数结合语义信息预测情感强度得分；<br>
 文章4：提出一种learning-to-rank模型预测情感强度得分。
 
 ----------
