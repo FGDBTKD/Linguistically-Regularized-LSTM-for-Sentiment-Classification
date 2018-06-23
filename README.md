@@ -40,17 +40,21 @@
  - 情感词典（sentiment lexicon）
 
 > 情感词典（英文）应用比较广泛的有Hu and Liu 2004年提出的情感词典和MPQA词典，详细介绍可分别参考以下两篇文章：
-<br>
+
 [[Hu and Liu 2004]  Mining and Summarizing Customer Reviews](https://www.cs.uic.edu/~liub/publications/kdd04-revSummary.pdf)
+<br>
 [[Wilson, Wiebe, and Hoffmann 2005] Recognizing Contextual Polarity in Phrase-Level Sentiment Analysis](https://people.cs.pitt.edu/~wiebe/pubs/papers/emnlp05polarity.pdf)
 
  - 否定词（negation words）
 
 > 否定词在情感分析中也是一个关键元素，它会改变文本表达的情感倾向。有很多相关研究：
-<br>
+
 [1. [Polanyi and Zaenen 2006] Contextual Valence Shifters](https://www.aaai.org/Papers/Symposia/Spring/2004/SS-04-07/SS04-07-020.pdf)
+<br>
 [2. [Taboada et al. 2011] Lexicon-Based Methods for Sentiment Analysis](https://www.aclweb.org/anthology/J/J11/J11-2001.pdf)
+<br>
 [3. [Zhu et al. 2014] An Empirical Study on the Effect of Negation Words on Sentiment](http://acl2014.org/acl2014/P14-1/pdf/P14-1029.pdf)
+<br>
 [4. [Kiritchenko and Mohammad 2016] Sentiment Composition of Words with Opposing Polarities](https://www.aclweb.org/anthology/N/N16/N16-1128.pdf)
 <br>
 > 文章1：对否定词的处理是将含有否定词的文本的情感倾向反转；
