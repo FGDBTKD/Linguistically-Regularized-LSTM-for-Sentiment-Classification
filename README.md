@@ -127,7 +127,7 @@ $$D(p||q)=\sum_{i=1}^{n}{p(x)\cdot log\frac{p(x)}{q(x)} } $$
 <br>
 这里所用的对称$KL$散度定义如下：
 $$D_{KL}=\frac{1}{2}\sum_{l=1}^{C}{p(l)log q(l)+q(l)logp(l)}$$   
-> 
+
 > 所以我们可以看到，
 当相邻的两个词分布较近，$KL$散度小于$M$时，$NSR$的值为$0$；
 随着两个词的分布差异增大时，$NSR$值变大。
@@ -205,12 +205,13 @@ $$E(\theta )=-\sum_{i}^{}{y^{i}log p^{i}  }+\alpha \sum_{i}^{}{\sum_{t}^{}{L_{t}
  - Stanford Sentiment Treebank (SST) (with five classes { very negative, negative, neutral, positive, very positive})
 
 > 两个数据集的具体统计信息如下图所示，
-<br>
-![2](https://leanote.com/api/file/getImage?fileId=5b0d482dab644179d800230b)
+
+![Figure 3](https://leanote.com/api/file/getImage?fileId=5b0d482dab644179d800230b)
 
 ----------
 ## 实验结果
-![3](https://leanote.com/api/file/getImage?fileId=5b0d4885ab644177f10022d4)
+
+![Figure 4](https://leanote.com/api/file/getImage?fileId=5b0d4885ab644177f10022d4)
 
 > 从实验结果可以看出:
 
@@ -220,7 +221,8 @@ $$E(\theta )=-\sum_{i}^{}{y^{i}log p^{i}  }+\alpha \sum_{i}^{}{\sum_{t}^{}{L_{t}
 
 ----------
 ## 不同规则的效果分析
-![4](https://leanote.com/api/file/getImage?fileId=5b0d4960ab644177f10022e2)
+
+![Figure 5](https://leanote.com/api/file/getImage?fileId=5b0d4960ab644177f10022e2)
 
 > 从实验结果可以看出，
 NSR和SR对提升模型性能最重要，
@@ -228,8 +230,9 @@ NR和IR对模型性能提升重要性没有那么强，
 可能是因为在测试数据中只有14%的句子中含有否定词，只有23%的句子含有程度副词。
 <br>
 为了进一步研究NR和IR的作用，作者又分别在仅包含否定词的子数据集（Neg.Sub）和仅包含程度副词的子数据集（Int.Sub）上做了对比实验，实验结果如下图，
-![5](https://leanote.com/api/file/getImage?fileId=5b0d49c2ab644179d8002323)
-<br>
+
+![Figure 6](https://leanote.com/api/file/getImage?fileId=5b0d49c2ab644179d8002323)
+
 从实验结果可以看出，
 
  - 在这些子数据集上，LR-Bi-LSTM的性能优于Bi-LSTM；
