@@ -206,12 +206,12 @@ $$E(\theta )=-\sum_{i}^{}{y^{i}log p^{i}  }+\alpha \sum_{i}^{}{\sum_{t}^{}{L_{t}
 
 > 两个数据集的具体统计信息如下图所示，
 
-![Figure 3](https://leanote.com/api/file/getImage?fileId=5b0d482dab644179d800230b)
+![Figure 3](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/3.png)
 
 ----------
 ## 实验结果
 
-![Figure 4](https://leanote.com/api/file/getImage?fileId=5b0d4885ab644177f10022d4)
+![Figure 4](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/4.png)
 
 > 从实验结果可以看出:
 
@@ -222,7 +222,7 @@ $$E(\theta )=-\sum_{i}^{}{y^{i}log p^{i}  }+\alpha \sum_{i}^{}{\sum_{t}^{}{L_{t}
 ----------
 ## 不同规则的效果分析
 
-![Figure 5](https://leanote.com/api/file/getImage?fileId=5b0d4960ab644177f10022e2)
+![Figure 5](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/5.png)
 
 > 从实验结果可以看出，
 NSR和SR对提升模型性能最重要，
@@ -231,7 +231,7 @@ NR和IR对模型性能提升重要性没有那么强，
 <br>
 为了进一步研究NR和IR的作用，作者又分别在仅包含否定词的子数据集（Neg.Sub）和仅包含程度副词的子数据集（Int.Sub）上做了对比实验，实验结果如下图，
 
-![Figure 6](https://leanote.com/api/file/getImage?fileId=5b0d49c2ab644179d8002323)
+![Figure 6](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/6.png)
 
 从实验结果可以看出，
 
