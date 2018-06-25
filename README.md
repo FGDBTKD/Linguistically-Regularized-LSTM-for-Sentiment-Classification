@@ -94,7 +94,7 @@ LSTM是把语言学规则（包括情感词典、否定词和程度副词）以�
 从时刻3到时刻4，输入了一个否定词not，我们知道加入not后情感应该会发生很大的变化，通常是一定程度的反转。所以我们为否定词not学习一个Negation Regularizer，并用它去约束p3和p4的关系。
 
 
-![Figure 1](https://leanote.com/api/file/getImage?fileId=5b1111e6ab644116b7001aa1)
+![Figure 1](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/1.png)
 
 > 本文的核心思想是通过规则化句子的相邻位置的输出来对句子层次的情感分类中的情感词，否定词和程度副词的语言角色进行建模。 
 如图所示，在"It’s not an interesting movie"中，"an interesting movie"和"interesting movie"中的预测情感分布应该彼此接近，而预测的情感分布在"interesting movie"应该与前面的位置（在后面的方向） ("movie") 完全不同，因为可以看到一个情感词("interesting") 。
