@@ -171,7 +171,7 @@ $$L_{t}^{(SR)}=max(0,D_{KL}(p_{t},p_{t-1}^{(SR)})-M )$$
 $$p_{t-1}^{(NR)}=softmax(T_{x_{j} }\times p_{t-1}  )$$ 
 $$p_{t+1}^{(NR)} =softmax(T_{x_{j} }\times p_{t+1}  )$$
 
-![figure 2](https://leanote.com/api/file/getImage?fileId=5b0d4528ab644177f100227e)
+![Figure 2](https://github.com/FGDBTKD/Linguistically-Regularized-LSTM-for-Sentiment-Classification/raw/master/images/2.png)
 
 <br>
 我们可以看到，如果在当前词是否定词的情况下，如果它的前一个词或者后一个词与当前词的分布较近，那么$NR$的值比较小。
